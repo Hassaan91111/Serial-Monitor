@@ -1,0 +1,10 @@
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\bin\Debug\Serial Monitor.exe
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\bin\Debug\Serial Monitor.pdb
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial Monitor.csprojAssemblyReference.cache
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial_Monitor.Form1.resources
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial_Monitor.Properties.Resources.resources
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial Monitor.csproj.GenerateResource.cache
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial Monitor.csproj.CoreCompileInputs.cache
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial Monitor.exe
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\obj\Debug\Serial Monitor.pdb
+C:\Users\Jhon\Desktop\Serial Monitor\Serial Monitor\bin\Debug\Serial Monitor.exe.config
