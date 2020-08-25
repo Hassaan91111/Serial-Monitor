@@ -30,7 +30,7 @@ namespace Serial_Monitor
             Console.WriteLine("Received: " + dump);
         }
 
-        private void write_to_port(string command, int baud_rate, bool change_baud)
+        private void write_to_port(string command, int baud_rate, bool change_baud, int delay)
         {
             port.ReadTimeout = 5000;
             port.WriteTimeout = 5000;
@@ -43,13 +43,13 @@ namespace Serial_Monitor
 
             port.Write(comm, 0, comm.Length);
             Console.WriteLine("Sent: " + command);
-            Thread.Sleep(5000);
 
             if (change_baud)
             {
                 port.BaudRate = baud_rate;
             }
 
+            Thread.Sleep(delay);
             count = port.Read(data, 0, data.Length);
 
             debug(data, count);
@@ -61,7 +61,7 @@ namespace Serial_Monitor
             try 
             {
                 port.BaudRate = 300;
-                await Task.Run(() => write_to_port(textBox1.Text, 300, false));
+                await Task.Run(() => write_to_port(textBox1.Text, 300, false, 1000));
             }
             catch(Exception ex)
             {
@@ -78,7 +78,7 @@ namespace Serial_Monitor
             try
             {
                 port.BaudRate = 300;
-                await Task.Run(() => write_to_port(textBox2.Text, 9600, true));
+                await Task.Run(() => write_to_port(textBox2.Text, 9600, true, 1000));
             }
             catch (Exception ex)
             {
@@ -95,7 +95,7 @@ namespace Serial_Monitor
             try
             {
                 port.BaudRate = 9600;
-                await Task.Run(() => write_to_port(textBox3.Text, 9600, false));
+                await Task.Run(() => write_to_port(textBox3.Text, 9600, false, 1000));
             }
             catch (Exception ex)
             {
@@ -112,7 +112,7 @@ namespace Serial_Monitor
             try
             {
                 port.BaudRate = 9600;
-                await Task.Run(() => write_to_port(textBox4.Text, 9600, false));
+                await Task.Run(() => write_to_port(textBox4.Text, 9600, false, 1000));
             }
             catch (Exception ex)
             {
@@ -129,7 +129,7 @@ namespace Serial_Monitor
             try
             {
                 port.BaudRate = 9600;
-                await Task.Run(() => write_to_port(textBox5.Text, 9600, false));
+                await Task.Run(() => write_to_port(textBox5.Text, 9600, false, 3000));
             }
             catch (Exception ex)
             {
@@ -146,7 +146,7 @@ namespace Serial_Monitor
             try
             {
                 port.BaudRate = 9600;
-                await Task.Run(() => write_to_port(textBox6.Text, 9600, false));
+                await Task.Run(() => write_to_port(textBox6.Text, 9600, false, 1000));
             }
             catch (Exception ex)
             {
