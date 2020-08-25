@@ -211,9 +211,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(387, 176);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 20;
-            this.label6.Text = "Baud 300";
+            this.label6.Text = "Baud 9600";
             // 
             // label7
             // 
